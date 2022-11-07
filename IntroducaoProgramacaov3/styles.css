@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  padding: 30px;
+}
+
+ol {
+  counter-reset: item;
+}
+ol > li {
+  display: block;
+}
+ol > li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+}
+
+article {
+  background-color: #f7f7f7e7;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+
+.float-button {
+  position: fixed;
+  width: 100px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: rgb(15, 137, 219);
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 700;
+}
